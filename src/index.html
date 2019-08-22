@@ -7,7 +7,28 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Criptografia de Mensagens</h1>
+      <form>
+        <fieldset>
+        <h2>Cifrar!</h2>
+        <p>Cifrar: <input type="text" placeholder="Mensagem a ser cifrada." id="Cifragem"/></p>
+        <p id="parâmetroCif">Parâmetro de Cifragem: <input type="number" id="parametroCif"/></p>
+        <p><input type="submit" class="Enviar" onclick= "catchThePhrase()"
+        value = "Enviar"/></p>
+        <p>Resultado: <div id="resultCifra"></div></p>
+        </fieldset>
+      </form>
+  </br>
+      <form>
+          <fieldset>
+          <h2>Decifrar!</h2>
+          <p>Decifrar: <input type="text" placeholder="Mensagem a ser decifrada." id="Decifragem"/></p>
+          <p><input type="button" class="Enviar" onclick= "sendThePhrase()"
+          value = "Enviar"/></p>
+          <p>Resultado: <div id="resultDecifra"></div></p>
+          </fieldset>
+        </form>
+
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
