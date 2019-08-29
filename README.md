@@ -20,8 +20,7 @@ A cifra de cézar é uma técnica de cifragem muito simples. Segundo o escritor 
 
 O seu funcionamento ocorre mediante uma substituição monoalfabética, o que significa que cada letra do texto plano é substituída por outra letra do alfabeto no texto criptografado (cifrado), de forma constante (sempre as mesmas letras são utilizadas). O deslocamento é determinado a partir de um número (que podemos designar como "offset").
 
-A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É um
-tipo de cifra por substituição, em que cada letra do texto original é
+A cifra de César funciona mediante substituição, em que cada letra do texto original é
 substituida por outra que se encontra há um número fixo de posições
 (deslocamento) mais a frente do mesmo alfabeto.
 
