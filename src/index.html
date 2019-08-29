@@ -2,33 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <html lang=”pt-br”>
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="root">
-      <h1>Criptografia de Mensagens</h1>
+    <div class="root">
+      <h1>My Secrets</h1>
       <form>
-        <fieldset>
+        <fieldset class="box1">
         <h2>Cifrar!</h2>
-        <p>Cifrar: <input type="text" placeholder="Mensagem a ser cifrada." id="Cifragem"/></p>
-        <p id="parâmetroCif">Parâmetro de Cifragem: <input type="number" id="parametroCif"/></p>
-        <p><input type="submit" class="Enviar" onclick= "catchThePhrase()"
-        value = "Enviar"/></p>
-        <p>Resultado: <div id="resultCifra"></div></p>
+        <p>Sobre o meu dia: </p>
+        <p></p><input type="text" placeholder="Mensagem a ser cifrada." id="Cifragem"/></p>
+        <p>Parâmetro de Cifragem: <input type="number" id="parametroCif"/></p>
+        <p><button id="send">Enviar</button></p>
+        <p>Resultado:</p>
+        <p><output name ="Resultado" id="resultCifra"></output> </p>
         </fieldset>
       </form>
   </br>
-      <form>
-          <fieldset>
+        <form>
+          <fieldset class="box2">
           <h2>Decifrar!</h2>
-          <p>Decifrar: <input type="text" placeholder="Mensagem a ser decifrada." id="Decifragem"/></p>
-          <p><input type="button" class="Enviar" onclick= "sendThePhrase()"
-          value = "Enviar"/></p>
-          <p>Resultado: <div id="resultDecifra"></div></p>
+          <p><button id="resend">Enviar</button></p>
+          <p>Resultado:</p>
+          <p><output name ="Resultado" id="resultDecifra"></output></p>
+          <p><button id="clean">Limpar</button></p>
           </fieldset>
         </form>
-
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
