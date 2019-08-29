@@ -16,7 +16,7 @@ function catchThePhrase() {
 
 function sendThePhrase() {
   event.preventDefault();
-  let string = document.getElementById("resultCifra").value;
+  let string = document.getElementById("Decifragem").value;
   let offset = parseInt(document.getElementById("parametroCif").value);
   let decriptedText = window.cipher.decode(offset, string);
   document.getElementById("resultDecifra").innerHTML += decriptedText;

@@ -1,24 +1,24 @@
 body{
-    background-color: #FFC29C;
-    font-family: 'Lexend Zetta', sans-serif;
-    color: #803100;
-    background-image: url("diary.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-color: #FFC29C;
+  font-family: 'Lexend Zetta', sans-serif;
+  color: #803100;
+  background-image: url("diary.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   }
 
 h1 {
-    text-align: center;
-    font-weight: 1000;
-    font-size: 32px;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 32px;
 }
 
 h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .root
@@ -32,10 +32,7 @@ h2 {
 }
 
 form {
-
   position:relative;
-
-
 }
 
 .box1

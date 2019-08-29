@@ -25,14 +25,14 @@ function encode(offset, string) {
       //comand to locate Uppercase letters.
       let msg = ((string.charCodeAt(i) - 65 + recalcOffset)% 26) + 65;
       let uncoded = String.fromCharCode(msg);
-      //transformação do ASCii para string e envio da informação ao Array criado.
+      //ASCii transformation to string. Send information to array.
       criptedText.push(uncoded);
 
     } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <=122) {
       //comand to locate Downsided letters
       let msg = ((string.charCodeAt(i) - 97 + recalcOffset)% 26) + 97;
       let uncoded = String.fromCharCode(msg);
-      //transformação do ASCii para string e envio da informação ao Array criado.
+      //ASCii transformation to string. Send information to array.
       criptedText.push(uncoded);
 
     } else {
@@ -48,20 +48,20 @@ function decode (offset, string) {
   let decriptedText = [];
   let size = string.length;
 
-  //contagem do tamanho da palavra para possibilitar a sua leitura no loop do for.
+  // word-size counting to allow its reading at loop.
   for (let i=0; i<size; i++) {
     if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <=90) {
       //comand to locate Uppercase letters.
       let msg = ((string.charCodeAt(i) - 90 - recalcOffset)% 26) + 90;
       let uncoded = String.fromCharCode(msg);
-      //transformação do ASCii para string e envio da informação ao Array criado.
+      //ASCii transformation to string. Send information to array.
       decriptedText.push(uncoded);
 
     } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <=122) {
-      //comando para localização do ASCii das letras minúsculas
+      //comand to locate Downsided letters.
       let msg = ((string.charCodeAt(i) - 122 - recalcOffset)% 26) + 122;
       let uncoded = String.fromCharCode(msg);
-      //transformação do ASCii para string e envio da informação ao Array criado.
+      //ASCii transformation to string. Send information to array.
       decriptedText.push(uncoded);
     } else {
       return string;
