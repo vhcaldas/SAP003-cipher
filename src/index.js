@@ -6,6 +6,9 @@ document.getElementById("resend").addEventListener("click", sendThePhrase);
 function catchThePhrase() {
   event.preventDefault();
   let string = document.getElementById("Cifragem").value;
+  if (!string) {
+    alert ("Digite uma frase.");
+  }
   let offset = parseInt(document.getElementById("parametroCif").value);
   if (!Number.isInteger(offset)) {
     alert ("Coloque um número sem decimais");
