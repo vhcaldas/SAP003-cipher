@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #FFC29C;
   font-family: 'Lexend Zetta', sans-serif;
   color: #803100;
@@ -7,7 +7,8 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  }
+  margin: 1px 1px 1px 1px
+}
 
 h1 {
   text-align: center;
@@ -21,36 +22,33 @@ h2 {
   font-size: 24px;
 }
 
-.root
-{
-  position:relative;
-  left:37%;
-  top:29%;
-  width:320px;
-  height:270px;
+.root {
+  position: relative;
+  left: 37%;
+  top: 29%;
+  width: 320px;
+  height: 270px;
 
 }
 
 form {
-  position:relative;
+  position: relative;
 }
 
-.box1
-{
-  width:300px;
-  height:350px;
+.box1 {
+  width: 300px;
+  height: 350px;
   border-width: medium;
   border-color: #803100;
   border-style: solid;
-  background-color:#FF914D;
+  background-color: #FF914D;
   padding: 10px;
   margin-top: 40px;
 }
 
-.box2
-{
-  width:300px;
-  height:350px;
+.box2 {
+  width: 300px;
+  height: 350px;
   border-width: medium;
   border-color: #803100;
   border-style: solid;
@@ -61,8 +59,6 @@ form {
 
 #parametroCif {
 
-  width:40px;
+  width: 4 0px;
   font-size: 13px;
 }
-
-

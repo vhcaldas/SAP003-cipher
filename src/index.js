@@ -1,28 +1,24 @@
-
-document.getElementById("send").addEventListener("click", catchThePhrase);
-
-document.getElementById("resend").addEventListener("click", sendThePhrase);
-
-function catchThePhrase() {
+function sendToCrypt() {
   event.preventDefault();
-  let string = document.getElementById("Cifragem").value;
+  const string = document.getElementById("input-crypt").value;
   if (!string) {
-    alert ("Digite uma frase.");
+    alert("Digite uma frase.");
   }
-  let offset = parseInt(document.getElementById("parametroCif").value);
+  const offset = parseInt(document.getElementById("offset").value);
   if (!Number.isInteger(offset)) {
-    alert ("Coloque um número sem decimais");
+    alert("Coloque um número sem decimais");
   }
-  let criptedText= window.cipher.encode(offset, string);
-  document.getElementById("resultCifra").innerHTML += criptedText;
+  const cryptedText = window.cipher.encode(offset, string);
+  document.getElementById("result-text").innerHTML = cryptedText;
 }
 
-function sendThePhrase() {
+function sendToDecrypt() {
   event.preventDefault();
-  let string = document.getElementById("Decifragem").value;
-  let offset = parseInt(document.getElementById("parametroCif").value);
-  let decriptedText = window.cipher.decode(offset, string);
-  document.getElementById("resultDecifra").innerHTML += decriptedText;
+  const string = document.getElementById("input-decrypt").value;
+  const offset = parseInt(document.getElementById("offset").value);
+  const decryptedText = window.cipher.decode(offset, string);
+  document.getElementById("result-text").innerHTML = decryptedText;
 }
 
-document.getElementById("clean").addEventListener("click", "");
+document.getElementById("sent-to-crypt").addEventListener("click", sendToCrypt);
+document.getElementById("sent-to-decrypt").addEventListener("click", sendToDecrypt);

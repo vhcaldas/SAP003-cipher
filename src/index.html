@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <html lang=”pt-br”>
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="root">
-      <h1>My Secrets</h1>
+
+<head>
+  <meta charset="utf-8">
+  <html lang=”pt-br”>
+  <title>Cifra de César</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="root">
+    <h1>My Secrets</h1>
+    <section>
       <form>
         <fieldset class="box1">
-        <h2>Cifrar!</h2>
-        <p>Sobre o meu dia: </p>
-        <p><input type="text" placeholder="Mensagem a ser cifrada." id="Cifragem"/></p>
-        <p>Parâmetro de Cifragem: <input type="number" id="parametroCif"/></p>
-        <p><button id="send">Enviar</button></p>
-        <p>Resultado:</p>
-        <p><output name ="Resultado" id="resultCifra"></output> </p>
+          <h2>Cifrar!</h2>
+          <p>Sobre o meu dia:</p>
+          <input type="text" placeholder="Mensagem a ser cifrada." id="input-crypt">
+          <p>Parâmetro de Cifragem: <input type="number" id="offset"></p>
+          <button id="sent-to-crypt">Enviar</button>
+          <p>Resultado:</p>
+          <output name="Resultado" id="result-text"></output>
         </fieldset>
       </form>
-  </br>
-        <form>
-          <fieldset class="box2">
+    </section>
+    <section>
+      <form>
+        <fieldset class="box2">
           <h2>Decifrar!</h2>
-          <p><input type="text" placeholder="Mensagem a ser Decifrada." id="Decifragem"/></p>
-          <p><button id="resend">Enviar</button></p>
+          <input type="text" placeholder="Mensagem a ser Decifrada." id="input-decrypt">
+          <button id="sent-to-decrypt">Enviar</button>
           <p>Resultado:</p>
-          <p><output name ="Resultado" id="resultDecifra"></output></p>
-          <p><button id="clean">Limpar</button></p>
-          </fieldset>
-        </form>
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+          <output name="Resultado" id="result-text"></output>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
