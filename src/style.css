@@ -16,7 +16,7 @@
 
 .box-button{
   margin: 2vw;
-  background-image: -moz-linear-gradient(top, #803100, #803100); 
+  background-image: radial-gradient(#803100, #803100);
   color: #dce3f3;
   height: 5vh;
   font-size: 1rem;
