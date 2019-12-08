@@ -4,36 +4,38 @@
 <head>
   <meta charset="utf-8">
   <html lang=”pt-br”>
-  <title>Cifra de César</title>
+  <title>My Secrets</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
 </head>
-
-<body>
-  <main class="root">
-    <h1>My Secrets</h1>
-    <section>
-      <form>
-        <fieldset class="box1">
-          <h2>Cifrar!</h2>
-          <p>Sobre o meu dia:</p>
-          <input type="text" placeholder="Mensagem a ser cifrada." id="input-crypt">
-          <p>Parâmetro de Cifragem: <input type="number" id="offset"></p>
-          <button id="sent-to-crypt">Enviar</button>
-          <p>Resultado:</p>
-          <output name="Resultado" id="result-text"></output>
-        </fieldset>
+<body class="body-viewport">
+  <header class="header">My Secrets</header>
+  <main class="main">
+    <section class="section">
+      <form class="box">
+        <label class="box-title">Cifrar!</label>
+        <p class= "box-paragraph">Sobre o meu dia:</p>
+        <textarea type="text" placeholder="Mensagem a ser cifrada." id="input-crypt" class="box-textarea"></textarea>
+        <div class="box-division">
+          <p class = "box-subtitle">Parâmetro:</p> 
+          <input type="number" id="offset-cipher" class ="box-offset">
+          <button id="sent-to-crypt" class="box-button">Enviar</button>
+        </div>
+        <p class= "box-paragraph">Resultado:</p>
+        <output name="Resultado" id="result-cipher" class="box-output"></output>
       </form>
     </section>
-    <section>
-      <form>
-        <fieldset class="box2">
-          <h2>Decifrar!</h2>
-          <input type="text" placeholder="Mensagem a ser Decifrada." id="input-decrypt">
-          <button id="sent-to-decrypt">Enviar</button>
-          <p>Resultado:</p>
-          <output name="Resultado" id="result-text"></output>
-        </fieldset>
+    <section class="section">
+      <form class="box">
+        <label class="title-decipher">Decifrar!</label>
+        <textarea type="text" placeholder="Mensagem a ser Decifrada." id="input-decrypt" class="box-textarea"></textarea>
+        <div class="box-division">
+            <p class = "box-subtitle">Parâmetro:</p> 
+            <input type="number" id="offset-decipher" class ="box-offset">
+            <button id="sent-to-decrypt" class="box-button">Enviar</button>
+          </div>
+        <p class= "box-paragraph">Resultado:</p>
+        <output name="Resultado" id="result-decipher" class="box-output"></output>
       </form>
     </section>
   </main>

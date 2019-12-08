@@ -4,20 +4,20 @@ function sendToCrypt() {
   if (!string) {
     alert("Digite uma frase.");
   }
-  const offset = parseInt(document.getElementById("offset").value);
+  const offset = parseInt(document.getElementById("offset-cipher").value);
   if (!Number.isInteger(offset)) {
     alert("Coloque um número sem decimais");
   }
   const cryptedText = window.cipher.encode(offset, string);
-  document.getElementById("result-text").innerHTML = cryptedText;
+  document.getElementById("result-cipher").innerHTML = cryptedText;
 }
 
 function sendToDecrypt() {
   event.preventDefault();
   const string = document.getElementById("input-decrypt").value;
-  const offset = parseInt(document.getElementById("offset").value);
+  const offset = parseInt(document.getElementById("offset-decipher").value);
   const decryptedText = window.cipher.decode(offset, string);
-  document.getElementById("result-text").innerHTML = decryptedText;
+  document.getElementById("result-decipher").innerHTML = decryptedText;
 }
 
 document.getElementById("sent-to-crypt").addEventListener("click", sendToCrypt);

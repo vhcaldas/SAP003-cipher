@@ -36,7 +36,7 @@ Foi utilizado no projeto: HTML, CSS e Javascript.
 
 A estrutura do projeto foi elaborada segundo o seguinte Fluxograma:
 
-![Fluxograma](src/Fluxograma.jpeg)
+![Fluxograma](src/Imagens/Fluxograma.jpeg)
 
 ## 4. Desenho do Projeto
 
