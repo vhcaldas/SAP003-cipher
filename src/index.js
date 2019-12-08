@@ -15,7 +15,13 @@ function sendToCrypt() {
 function sendToDecrypt() {
   event.preventDefault();
   const string = document.getElementById("input-decrypt").value;
+  if (!string) {
+    alert("Digite uma frase.");
+  }
   const offset = parseInt(document.getElementById("offset-decipher").value);
+  if (!Number.isInteger(offset)) {
+    alert("Coloque um número sem decimais");
+  }
   const decryptedText = window.cipher.decode(offset, string);
   document.getElementById("result-decipher").innerHTML = decryptedText;
 }
